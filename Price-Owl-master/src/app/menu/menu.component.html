@@ -1,0 +1,56 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bgcor">
+  <div class="container-fluid">
+    <a class="navbar-brand owl" href="#"><img src="../../assets/icons/icon-96x96.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><img src="../../assets/icons/icon-72x72.png" alt=""></span>
+    </button>
+    <form *ngIf="!(this.router.url === '/AboutUs')" class="d-flex formInput">
+      <input class="inputd form-control me-2" type="search" placeholder="Search" aria-label="Search" (input)="onInputChanged($event)"
+      (keyup.enter)="searchItens()">
+      <button class="btn btn-outline-light"  (click)="searchItens()" type="button">Search</button>
+    </form>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/AboutUs">AboutUs</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorias
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Eletrônicos</a></li>
+            <li><a class="dropdown-item" href="#">Móveis</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Brinquedos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Adminstrador</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<div *ngIf="!(this.router.url === '/AboutUs')">
+
+  <app-listagem-pesquisa [itens]="searchService.itens"></app-listagem-pesquisa>
+
+</div>
+
+
+
+

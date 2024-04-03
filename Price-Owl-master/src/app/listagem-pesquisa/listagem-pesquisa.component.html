@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+</head>
+
+<div class="form-group">
+<select class="form-control menor" id="sel1" aria-label=" select example" (ngModel)="filtros.selectFilter" (change)="filtroAutomatico(filtros.selectFilter)" >
+  <option class="menor" value="default"> Maior Relevância </option>
+  <option value="price_asc"> Menor Preço </option>
+  <option value="price_desc"> Maior Preço </option>
+</select>
+</div>
+<div *ngIf="itens" class="card-container">
+  <div *ngFor="let itens of itens" class="card estiloCard shadow" style="width: 18rem;">
+    <div style="width: 90px; height: 90px;">
+    <img class="card-img-top imagemCard " src="{{itens.thumbnail}}" alt="Card image cap">
+  </div>
+    <div class="card-body ">
+      <p class="idProduto">{{itens.id}}</p>
+      <h5 class="card-title produtoNome" (click)="verDetalhesProduto(itens.id)">{{ itens.title }}</h5>
+      <p class="card-text textoProduto"> {{ formatPrice(itens.price) }} </p>
+      <a href="{{itens.permalink}}" target="_blank" class="btn btn-primary">Acessar site</a>
+    </div>
+    </div>
+  </div>
+
