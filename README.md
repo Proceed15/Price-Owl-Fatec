@@ -1,16 +1,18 @@
 # PriceOwl (PT-BR)
 
-Trabalho de Conclusão de Curso Apresentado a Etec Fernando Prestes para a obtenção do título de Técnico em Desenvolvimento de Sistemas.
+Trabalho de Conclusão de Curso Apresentado a Fatec Sorocaba para a obtenção do título de Tecnólogo em Análise e Desenvolvimento de Sistemas.
 
 ## Integrantes do Grupo de TCC:
 José Roberto Lisboa da Silva Filho.
 Kaique Alves Mesquita.
 Lucas Feitosa Almeida Rocha.
+Luiz Filipe de Camargo.
 Gustavo Germano Lemos Pereira.
+
 
 # Generation (EN-US)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
 ## Development server
 
