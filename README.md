@@ -4,10 +4,10 @@ Trabalho de Conclusão de Curso Apresentado a Fatec Sorocaba para a obtenção d
 
 ## Integrantes do Grupo de TCC:
 José Roberto Lisboa da Silva Filho.
+Gustavo Germano Lemos Pereira.
 Kaique Alves Mesquita.
 Lucas Feitosa Almeida Rocha.
 Luiz Filipe de Camargo.
-Gustavo Germano Lemos Pereira.
 
 
 # Generation (EN-US)
